@@ -38,7 +38,7 @@ class ArticleImageInline(admin.TabularInline):
 
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'date_of_publication', 'slug', 'main_page')
+    list_display = ('title', 'date_of_publication', 'slug', 'main_page', 'category')
     inlines = [ArticleImageInline]
     multiupload_form = True
     multiupload_list = False
